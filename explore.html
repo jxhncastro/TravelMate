@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLORE</title>
+    <link rel="icon" href="css/assets/logo.png">
+    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="logo">
+        <img src="css/assets/logo.png" alt="" class="logo">
+    </header>
+<div class="container">
+    <h2 class="section-title">PLACE TO VISIT</h2>
+    <p class="text-center">You will never run out of somewhere to go and something to do.</p>
+
+    <div class="row">
+        <!-- Itinerary Card 1 -->
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://cdn.modlar.com/photos/3155/img/s_1920_x/milagrosa_extbeach_56cb95d943032.jpg" class="card-img-top" alt="Badoc">
+        <div class="card-body">
+            <h5 class="card-title text-center text-primary">Badoc</h5>
+            <button class="btn btn-primary w-100" onclick="toggleList(this)">Click Here</button>
+            <ul class="itinerary-list mt-3" style="display: none;">
+                <center><p>Click the name to watch video</p></center>
+                <li><a href="#" onclick="openModal('https://www.youtube.com/embed/c_adyX6A28U?si=mFdy8ZHUAFdGxZg8'); return false;" class="links">La Virgen Milagrosa</a></li>
+                <li><a href="#" onclick="openModal('https://www.youtube.com/embed/Djskc-VhpTY?si=zeloBn9W-b5jdc0d'); return false;" class="links">Ilocos Norte - Ilocos Sur Border Arch</a></li>
+                <li><a href="#" onclick="openModal('https://www.youtube.com/embed/QIyP1_Sy9hQ?si=iAhiC4rkoq-PFYA4'); return false;" class="links">Badoc Island White Beach</a></li>
+                <li><a href="#" onclick="openModal('https://www.youtube.com/embed/Kd9rqLu-zPU?si=_y80ciHV_vwCO_xx'); return false;" class="links">Museo nina Juan at Antonio Luna</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Centered and Large -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel">Credits to the Owner</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9"> <!-- Responsive Video -->
+                    <iframe id="videoFrame" src="" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Itinerary Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://live.staticflickr.com/7184/6787964998_9abd7f78dc_b.jpg" class="card-img-top" alt="Currimao">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-primary">Currimao</h5>
+                    <button class="btn btn-primary w-100" onclick="toggleList(this)">Click Here</button>
+                    <ul class="itinerary-list mt-3" style="display: none;">
+                        <center><p>Click the name to watch video</p></center>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/SPOFTqfh9Hs?si=mWVKBfEeHA0yCb_H'); return false;" class="links">Pangil Rock Formation</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/DC64kQrE34U?si=mkLOKazEVHEieZmZ'); return false;" class="links">Currimao South Watch Tower</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Itinerary Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.ilocosnorte.ph/img/itinerary/paoaychurch-day.jpg" class="card-img-top" alt="Paoay">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-primary">Paoay</h5>
+                    <button class="btn btn-primary w-100" onclick="toggleList(this)">Click Here</button>
+                    <ul class="itinerary-list mt-3" style="display: none;">
+                        <center><p>Click the name to watch video</p></center>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/YDbFNOv85YA?si=3y7tP3-nRhz4IT7E'); return false;" class="links">San Agustin Church of Paoay</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/dvGc17e-7Iw?si=8TPiMewTQaLDYc7S'); return false;" class="links">Paoay Sand Dunes</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/V0EzqMGaJj0?si=IdFNDWrEDkqdBkk2'); return false;" class="links">Paoay Lake</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/qW4n1pmuA8I?si=g_9FCLlXumKtj03c'); return false;" class="links">Malacañang of the North</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Itinerary Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/b1/44/55/b144552c04fb944a3afea0735ee04939.jpg" class="card-img-top" alt="Pagudpud">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-primary">Pagudpud</h5>
+                    <button class="btn btn-primary w-100" onclick="toggleList(this)">Click Here</button>
+                    <ul class="itinerary-list mt-3" style="display: none;">
+                        <center><p>Click the name to watch video</p></center>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/gewwavCabnA?si=u2lREshGrQsYygm2'); return false;" class="links">Pagudpud Arch</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/ViOuhUUF4hg?si=niPShfw5fx7jLXiv'); return false;" class="links">Saud Beach</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/cEaY4J54pqg?si=-3syMb4PUXTEpPmb'); return false;" class="links">Patapat Viaduct</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/QT4OjtHpqss?si=p073oz1nIXPhJyNg'); return false;" class="links">Little Batanes of the North</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/kcxYi2aSdp8?si=G0jqvFvVsXAoYJZs'); return false;" class="links">Kabigan Falls</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/QY-0eMrSUZo?si=oyv5AF1ZJ2UA6ukE'); return false;" class="links">Bantay Abot Cave</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/HENdox0uKPc?si=OwCrgaShhiLLz2LD'); return false;" class="links">Dos Hermanos Island</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Itinerary Card 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.ilocosnorte.ph/img/itinerary/capitol.jpg" class="card-img-top" alt="Laoag">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-primary">Laoag</h5>
+                    <button class="btn btn-primary w-100" onclick="toggleList(this)">Click Here</button>
+                    <ul class="itinerary-list mt-3" style="display: none;">
+                        <center><p>Click the name to watch video</p></center>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/fQ5ETj0ffq0?si=uGnu6V83GXf_GwF-'); return false;" class="links">Sinking Bell Tower</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/6OpxzPaL9MM?si=6wxeG0KqMZm5pSym'); return false;" class="links">Ilocos Norte Provincial Capitol</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/1tjRdzlVD_s?si=LAvvJ4CzfHFK9AOZ'); return false;" class="links">Aurora Park</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/rzL7z7LYp-Q?si=EMC_Jj2ACHqFGQvr'); return false;" class="links">Sand Dunes View Deck</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/NF8jTYAG3MA?si=qYvJCdtPv_ZDdWMl'); return false;" class="links">Fort Ilocandia Resort Hotel</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/eSLIDj7YIFo?si=dzkGOlVQmnqOxzz8'); return false;" class="links">Cathedral of Praise - Laoag</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Itinerary Card 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://religiouslife169297625.wordpress.com/wp-content/uploads/2018/02/received_1427019714073101-1782767582.jpeg?w=620" class="card-img-top" alt="Batac">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-primary">Batac</h5>
+                    <button class="btn btn-primary w-100" onclick="toggleList(this)">Click Here</button>
+                    <ul class="itinerary-list mt-3" style="display: none;">
+                        <center><p>Click the name to watch video</p></center>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/EAI3iIsNSyU?si=BXC2xHtNRhMgN8ea'); return false;" class="links">Marcos Museum</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/E460btYd2gQ?si=iJO3oyxXwIkm6SkX'); return false;" class="links">Batac Riverside Empanadaan</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/V2WJgRCYb08?si=xY89Uv_HuDPzIBxs'); return false;" class="links">Immaculate Conception Parish - Batac Church</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/TgRuppYjB5Q?si=reKFwpHKyW0U8lnV'); return false;" class="links">Batac Mini Park</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Itinerary Card 7 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.ilocosnorte.ph/img/itinerary/solsona.jpg" class="card-img-top" alt="Solsona">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-primary">Solsona</h5>
+                    <button class="btn btn-primary w-100" onclick="toggleList(this)">Click Here</button>
+                    <ul class="itinerary-list mt-3" style="display: none;">
+                        <center><p>Click the name to watch video</p></center>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/4skTRbCW3y0?si=XQumDaKNGFEe-CfJ'); return false;" class="links">Ilocos Norte View Deck</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/VM7EGP3I1Fs?si=8QCrjLc_TWinpD7B'); return false;" class="links">Karinking Serrek Picnic Grove</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Itinerary Card 8 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://mediaim.expedia.com/destination/2/2a644e472460971eb79a3e28607a9691.jpg" class="card-img-top" alt="Adams">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-primary">Adams</h5>
+                    <button class="btn btn-primary w-100" onclick="toggleList(this)">Click Here</button>
+                    <ul class="itinerary-list mt-3" style="display: none;">
+                        <center><p>Click the name to watch video</p></center>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/DLbkKLhgLdg?si=4nUIQx993luGPjHt'); return false;" class="links">Adams Municipal Hall</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/urbvO5Nlx0A?si=9gIFxTTBd22UGaRz'); return false;" class="links">Cardom's Winery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Itinerary Card 9 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://live.staticflickr.com/5304/5792439331_7527ffe5bf_b.jpg" class="card-img-top" alt="Bangui">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-primary">Bangui</h5>
+                    <button class="btn btn-primary w-100" onclick="toggleList(this)">Click Here</button>
+                    <ul class="itinerary-list mt-3" style="display: none;">
+                        <center><p>Click the name to watch video</p></center>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/Dkgrh06ZAjk?si=JPxvr9qy-7kzjQmr'); return false;" class="links">18° North Camping Cafe and Diner</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/WXHtSuMfiR8?si=ChMotaHFsOH16n31'); return false;" class="links">Sentinella Hill</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/8TCEShI_K5w?si=j8TTFJTdubOPHg16'); return false;" class="links">Bangui View Deck</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/oQ--sJxzoRY?si=sjonIEn7RBz4MJX0'); return false;" class="links">Bangui Windmills</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Itinerary Card 10 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://www.ilocosnorte.ph/img/itinerary/kapurpurawan.jpg" class="card-img-top" alt="Burgos">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-primary">Burgos</h5>
+                    <button class="btn btn-primary w-100" onclick="toggleList(this)">Click Here</button>
+                    <ul class="itinerary-list mt-3" style="display: none;">
+                        <center><p>Click the name to watch video</p></center>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/ivBmmVxU5BI?si=9xnGRVFh-FnlIRSM'); return false;" class="links">Kapurpurawan Rock Formation</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/hwq5E3o7Cv8?si=yDTWIqS0IIjrLSK_'); return false;" class="links">Cape Bojeador Lighthouse</a></li>
+                        <li><a href="#" onclick="openModal('https://www.youtube.com/embed/A9ngzuBuRIg?si=KOziM3pjeOVwXR91'); return false;" class="links">Tanap-Avis Falls</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<section class="cta">
+    <a href="itineraries.php" class="cta-button">Create a Trip</a>
+</section>
+
+<script>
+    function toggleList(button) {
+        let list = button.nextElementSibling; // Selects the next element (ul.itinerary-list)
+        if (list.style.display === "none") {
+            list.style.display = "block";
+            button.textContent = "Hide List";
+        } else {
+            list.style.display = "none";
+            button.textContent = "Watch Here";
+        }
+    }
+
+    function toggleList(button) {
+    let list = button.nextElementSibling;
+    if (list.style.display === "none") {
+        list.style.display = "block";
+        button.textContent = "Hide List";
+    } else {
+        list.style.display = "none";
+        button.textContent = "Click Here";
+    }
+}
+
+function openModal(videoUrl) {
+    document.getElementById("videoFrame").src = videoUrl;
+    var myModal = new bootstrap.Modal(document.getElementById("videoModal"));
+    myModal.show();
+}
+
+// Stop video when modal is closed
+document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+    document.getElementById("videoFrame").src = "";
+});
+
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

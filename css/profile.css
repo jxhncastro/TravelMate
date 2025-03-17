@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #3498db;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.menu-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    transition: 0.3s;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.goback {
+    background: #e74c3c;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Ensures it stays at the bottom */
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.goback:hover {
+    background: #c0392b;
+}
+
+.menu-item:hover {
+    background: #2980b9;
+}
+
+/* Content */
+.content-box {
+    flex-grow: 1;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px;
+}
+
+/* Buttons */
+.view-btn, .delete-btn {
+    margin-left: 15px;
+    margin-top: 25px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.view-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.view-btn:hover {
+    background-color: #2980b9;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* My Trips Section */
+.my-trips {
+    text-align: center;
+}
+
+.my-trips img {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.my-trips p {
+    font-size: 18px;
+    color: #555;
+}
+
+.trip-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.trip-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.trip-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.trip-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.view-btn, .delete-btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.view-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.view-btn:hover {
+    background-color: #2980b9;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .trip-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu-item {
+        display: block;
+        padding: 10px;
+    }
+
+    .content-box {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 70px;
+    }
+
+    .menu-item {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .view-btn, .delete-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
