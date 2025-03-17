@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['user_name'] = $row['name'];
                 $_SESSION['user_id'] = $row['userID']; // FIXED: Use correct column name
 
-                header("Location: profile.php");
+                header("Location: itineraries.php");
                 exit();
             } else {
                 $error[] = "Incorrect email or password!";
